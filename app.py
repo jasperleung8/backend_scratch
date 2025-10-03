@@ -1,5 +1,9 @@
 from flask import Flask
 import scratchattach as sa
+from threading import Thread
+import backend_code
+
+Thread(target=backend_code.run).start()
 
 session = sa.login_by_id(".eJxVj0trwzAQhP-LzomrtS3Zzi0lJZfSQl-Qk9FjYyt2pGDLBFL637uCXHJbvtmZnf1ly4yTV2dkG3ZS8wUnPQW2Yq1aYt8msXWWtKrOKyFrTlLEOZoQBpc81zANaB8NWpkBfXIlhj46o6ILPrsLc_aBl_EOn-_LlBtoIFNTcpCAjbUgSiu15rJSpTaCawMlNBu-P-z8z26_AIx44-v91-3oXvX79-cLxYyhc37tLpRUywzKIoNCZnkuUslR-W5RXWpOt1bMngiENroz3oJPeHvGiao9veG1PdBzj6_1au5pKdegG9sA8KKoKlC2Nrk5CoOglOCSQKGlMCX7-we-lnF5:1utNCF:7HeahINQVqpyfTonWxS7-ZzztSY", username="jasperbro") 
 
